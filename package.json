@@ -5,9 +5,6 @@
   "dependencies": {
     "axios": "^0.17.1",
     "react": "^16.2.0",
-    "react-d3": "^0.4.0",
-    "react-d3-basic": "^1.6.11",
-    "react-date-range": "^0.9.4",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-scripts": "1.1.1",
