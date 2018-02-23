@@ -8,6 +8,7 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-scripts": "1.1.1",
+    "react-date-range": "^0.9.4",
     "recharts": "^1.0.0-beta.10",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
