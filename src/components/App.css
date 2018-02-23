@@ -7,7 +7,7 @@ body {
 	height: 50px;
 	display: flex;
 	background: #404040;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: flex-start;
 }
 .ui.button {
@@ -33,7 +33,7 @@ body {
 	background: darkred;
 }
 .item {
-	width: 150px;
+	width: 120px;
 }
 .ui.label {
 	background: #404040;
@@ -54,7 +54,7 @@ body {
 }
 
 .date:hover {
-	height: 250px;
+	height: 255px;
 }
 .text {
 	color: #ddd;
@@ -65,4 +65,6 @@ body {
 	overflow: scroll;
 
 }
- 
+.ui.table {
+	text-align: right;
+} 

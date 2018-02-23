@@ -6,7 +6,7 @@ import List from './List';
 import Charts from './Charts';
 import './App.css';
 import {connect} from 'react-redux';
-//import {bindActionCreators} from 'redux';
+
 
 class App extends Component {
 
@@ -28,9 +28,8 @@ class App extends Component {
         <div id="message">
           {this.props.message}
         </div>
-        {this.props.data  ? <Charts /> : <span/>}
-        {this.props.data ? <List /> : <span/>}
-
+        <Charts /> 
+        <List />      
       </div>
     );
   }
@@ -39,10 +38,9 @@ class App extends Component {
 
 function mapStateToProps(state) {
     return {
-        startDate: state.startDate,
-        endDate: state.endDate,
-        message: state.message, 
-        data: state.data
+        
+        message: state.message
+       
     };
 } 
 export default connect(mapStateToProps)(App);

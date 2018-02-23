@@ -125,7 +125,7 @@ export const calculateSMA = (currency, day, days) => {
 				}
 				const data1 = sma20.map((detail, i) => {
 					return {
-						time: time[i+199], //(new Date(Number(data[i+199].time) * 1000)).toDateString(),
+						time: time[i+199], 
 						open: open[i+199],
 						close: close[i+199],
 						high: high[i+199],
@@ -138,7 +138,7 @@ export const calculateSMA = (currency, day, days) => {
 				})
 		
 				if(close.length>0) {
-					
+					console.log((new Date()).getTime()/1000);
 					dispatch(gotData(data1));
 				}
 			})

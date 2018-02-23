@@ -6,6 +6,8 @@ import { setMessage, calculateSMA } from '../actions/index';
 class Calculate extends React.Component {
     
     calculate = () => {
+
+        // input validation and warning messages
         if(this.props.startDate && this.props.endDate && this.props.symbol) {
             const yesterday = (new Date()).getTime()/1000 - 60*60*24;
             
